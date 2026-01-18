@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fandom Site</title>
+    <!-- Pretendard CDN -->
+  <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+    <link rel="stylesheet" href="streaming-guide.css">
+
+    <style>
+    body {
+      font-family: "Pretendard",
+                   Arial;
+      font-size: 16px;
+      line-height: 1.7;
+    }
+    h1 {
+      font-weight: 800; /* ExtraBold */
+    }
+    h2 {
+      font-weight: 700; /* Bold */
+    }
+    .submenu-btn,
+    .submenu-btn a {
+      font-weight: 600; /* SemiBold */
+    }
+    .submenu,
+    .submenu a {
+      font-weight: 500; /* Medium */
+    }  
+    .date,
+    .desc {
+     font-weight: 500; /* Medium */
+    }
+    .main-item {
+     font-weight: 600; /* SemiBold */
+    }
+    .sub-list {
+     font-weight: 500; /* Medium */
+    }    
+  </style>
+</head>
+<body>
+
+<header>
+    <button class="menu-btn">☰</button>
+    <h1><a href="../../index.html"> HIGHLIGHT 팬사이트</a></h1>
+</header>
+
+<!-- 사이드바 -->
+<nav class="sidebar">
+    <ul>
+        <li class="has-submenu">
+            <button type="button" class="submenu-btn" aria-expanded="false">스트리밍</button>
+            <ul class="submenu">
+                <li><a href="streaming-guide.html">가이드</a></li>
+                <li><a href="../list/streaming-list.html">리스트</a></li>
+                <li><a href="../oneclick/streaming-oneclick.html">스트리밍 원클릭</a></li>
+            </ul>
+        </li>
+        <li class="has-submenu">
+            <button type="button" class="submenu-btn" aria-expanded="false">다운로드</button>
+            <ul class="submenu">
+                <li><a href="../../download/guide/download-guide.html">가이드</a></li>
+            </ul>
+        </li>
+        <li class="has-submenu">
+            <button type="button" class="submenu-btn" aria-expanded="false">투표</button>
+            <ul class="submenu">
+                <li><a href="../../vote/guide/vote-guide.html">가이드</a></li>
+                <li><a href="../../vote/chart/chart-ratio.html">차트 반영 비율</a></li>
+                <li><a href="../../vote/radio/radio-oneclick.html">라디오 원클릭</a></li>
+            </ul>
+        </li>
+        <li class="has-submenu">
+            <button type="button" class="submenu-btn" aria-expanded="false">차트</button>
+            <ul class="submenu">
+                <li><a href="../../chart/chart.html">음원차트</a></li>
+            </ul>
+        </li>
+        <li class="has-submenu">
+            <button type="button" class="submenu-btn" aria-expanded="false">기부∙모금</button>
+            <ul class="submenu">
+                <li><a href="../../donation/id/id.html">아이디 기부</a></li>
+                <li><a href="../../donation/donation/donation.html">총공 모금</a></li>
+            </ul>
+        </li>
+        <li class="has-submenu">
+            <button type="button" class="submenu-btn" aria-expanded="false">모집</button>
+            <ul class="submenu">
+                <li><a href="../../recruitment/staff/staff.html">총공팀 총대/스태프</a></li>
+                <li><a href="../../recruitment/helper/helper.html">헬퍼</a></li>
+            </ul>
+        </li>
+        <li class="has-submenu">
+            <button type="button" class="submenu-btn" aria-expanded="false">안내</button>
+            <ul class="submenu">
+                <li><a href="../../notice/album-group-order.html">앨범 공동 구매</a></li>
+            </ul>
+        </li>
+        <li class="submenu-btn">
+            <a href="../../fan-chant/fan-chant.html">응원법</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="guide-layout">
+
+     <!-- 음악 정보 -->
+        <div class="music-info">
+            <h2>소제목 예시</h2>
+            <p class="date">2026년 01월</p>
+            <p class="desc">간단한 설명 예시</p>
+        </div>
+
+    <div class="menu-spacer"></div>
+
+        <!-- 메뉴 바 -->
+    <div class="menu-bar">
+        <button class="main-item" data-target="music">음원</button>
+        <button class="main-item" data-target="mv">뮤직비디오</button>
+    </div>
+    
+        <!-- 🔽 음원 패널 (사이드바 ↓ 버전) -->
+        <div class="dropdown-panel" id="music">
+            <ul class="sub-list">
+                    <li><button data-image="images/melon-streaming.jpg">멜론</button></li>
+                    <li><button data-image="images/genie-streaming.jpg">지니</button></li>
+                    <li><button data-image="images/bugs-streaming.jpg">벅스</button></li>
+                    <li><button data-image="images/flo-streaming.jpg">플로</button></li>
+                    <li><button data-image="images/vibe-streaming.jpg">바이브</button></li>
+                    <li><button data-image="images/samsung-music-streaming.jpg">삼성뮤직</button></li>
+                    <li><button data-image="images/apple-music-streaming.jpg">애플뮤직</button></li>
+                    <li><button data-image="images/only-android-streaming.jpg">동시 스트리밍</button></li>
+                </ul>
+        </div>
+
+           <!-- 🔽 M/V 패널 -->
+           <div class="dropdown-panel" id="mv">
+                <ul class="sub-list">
+                    <li><button data-images="images/youtube-streaming01.jpg,images/youtube-streaming02.jpg">유튜브</button></li>
+                </ul>
+            </div>
+    </div>
+
+</div>
+
+    <!-- 오른쪽: 콘텐츠 -->
+    <section class="content-area" id="contentArea">
+        <div class="image-wrapper">
+            <img src="images/melon-streaming.jpg" alt="기본 이미지">
+        </div>
+    </section>
+
+</div>
+
+<script src="streaming-guide.js"></script>
+
+<!-- 맨 위로 버튼 -->
+<button id="scrollTopBtn">▲</button>
+
+</body>
+</html>

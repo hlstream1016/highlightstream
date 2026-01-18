@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fandom Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <button class="menu-btn">☰</button>
+  <h1><a href="index.html"> HIGHLIGHT 팬사이트</a></h1>
+</header>
+
+<nav class="sidebar">
+  <ul>
+    <li class="has-submenu">
+        <button type="button" class="submenu-btn" aria-expanded="false">
+        스트리밍
+  </button>
+  <ul class="submenu">
+      <li><a href="streaming/guide/streaming-guide.html">가이드</a></li>
+      <li><a href="streaming/list/streaming-list.html">리스트</a></li>
+      <li><a href="streaming/oneclick/streaming-oneclick.html">스트리밍 원클릭</a></li>
+  </ul>
+    </li>
+        
+    <li class="has-submenu">
+        <button type="button" class="submenu-btn" aria-expanded="false">
+            다운로드
+        </button>
+    <ul class="submenu">
+        <li><a href="download/guide/download-guide.html">가이드</a></li>
+    </ul>
+    </li>
+
+    <li class="has-submenu">
+        <button type="button" class="submenu-btn" aria-expanded="false">
+            투표
+        </button>
+    <ul class="submenu">
+        <li><a href="vote/guide/vote-guide.html">가이드</a></li>
+        <li><a href="vote/chart/chart-ratio.html">차트 반영 비율</a></li>
+        <li><a href="vote/radio/radio-oneclick.html">라디오 원클릭</a></li>
+    </ul> 
+    </li>
+
+    <li class="has-submenu">
+        <button type="button" class="submenu-btn" aria-expanded="false">
+            차트
+        </button>
+    <ul class="submenu">
+        <li><a href="chart/chart/chart.html">음원차트</a></li>
+    </ul>
+    </li>
+
+    <li class="has-submenu">
+        <button type="button" class="submenu-btn" aria-expanded="false">
+            기부∙모금
+        </button>
+    <ul class="submenu">
+        <li><a href="donation/id/id.html">아이디 기부</a></li>
+        <li><a href="donation/donation/donation.html">총공 모금</a></li>
+    </ul>
+    </li>
+
+    <li class="has-submenu">
+        <button type="button" class="submenu-btn" aria-expanded="false">
+            모집
+        </button>
+    <ul class="submenu">
+        <li><a href="recruitment/staff/staff.html">총공팀 총대/스태프</a></li>       
+        <li><a href="recruitment/helper/helper.html">헬퍼</a></li>
+    </ul>
+    </li>
+
+    <li class="has-submenu">
+        <button type="button" class="submenu-btn" aria-expanded="false">
+            안내
+        </button>
+    <ul class="submenu">
+        <li><a href="notice/album-group-order.html">앨범 공동 구매</a></li>
+    </ul>
+    </li>
+      <li class="submenu-btn">
+          <a href="fan-chant/fan-chant.html">응원법</a>
+      </li>
+</nav>
+
+    <main class="main-content">
+
+        <section class="card video">
+            <h2>Music Video</h2>
+
+            <select id="mv-select">
+                <option value="As3FEXaA3ms">MV 1</option>
+                <option value="3kfhoikVzUc">MV 2</option>
+                <option value="olPe8g7A32E">MV 3</option>
+            </select>
+
+            <iframe
+                id="mv-frame"
+                src="https://www.youtube.com/embed/As3FEXaA3ms?si=ynqQv-5TJNEH8bBl"
+                allowfullscreen>
+            </iframe>
+        </section>
+
+        <section class="card chart">
+            <h2>Chart Ranking</h2>
+
+            <ul class="chart-list">
+                <li class="chart-item">
+                    <strong class="platform">멜론</strong>
+                    <div class="chart-info">
+                    <span class="rank">23위</span>
+                    <span class="change up">▲4</span>
+                    </div>
+                </li>
+
+                <li class="chart-item">
+                    <strong class="platform">지니</strong>
+                    <div class="chart-info">
+                    <span class="rank">18위</span>
+                    <span class="change down">▼1</span>
+                    </div>
+                </li>
+
+                <li class="chart-item">
+                    <strong class="platform">벅스</strong>
+                    <div class="chart-info">
+                    <span class="rank">12위</span>
+                    <span class="change same">—</span>
+                    </div>
+                </li>
+
+                <li class="chart-item">
+                    <strong class="platform">플로</strong>
+                    <div class="chart-info">
+                    <span class="rank">15위</span>
+                    <span class="change up">▲2</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="card todolist">
+            <h2>To Do List</h2>
+            <ul>
+                <li>⬜ 스트리밍</li>
+            </ul>
+        </section>
+
+        <section class="card quick">
+            <h2>Streaming One-click</h2>
+            <a href="streaming-oneclick.html" class="btn">바로가기</a>
+        </section>
+
+        <section class="card quick">
+            <h2>Radio One-click</h2>
+            <a href="radio-oneclick.html" class="btn">바로가기</a>
+        </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
